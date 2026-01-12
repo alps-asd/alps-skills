@@ -6,12 +6,26 @@ Claude Code skills for ALPS (Application-Level Profile Semantics) development.
 
 A collection of AI-powered skills for designing RESTful APIs using ALPS profiles. These skills help generate, validate, and convert ALPS profiles to other formats.
 
+```
+                    ALPS
+                      │
+    ┌─────────────────┼─────────────────┐
+    ↓                 ↓                 ↓
+API Spec           Data Layer        Validation
+├─ openapi         ├─ jsonschema     └─ alps
+├─ graphql         └─ sql
+└─ (asyncapi)
+```
+
 ## Available Skills
 
 | Skill | Description |
 |-------|-------------|
 | alps | Generate, validate, and improve ALPS profiles |
 | alps-to-openapi | Convert ALPS profiles to OpenAPI specifications |
+| alps-to-graphql | Convert ALPS profiles to GraphQL schema |
+| alps-to-jsonschema | Convert ALPS profiles to JSON Schema |
+| alps-to-sql | Convert ALPS profiles to SQL DDL |
 
 ## Installation
 
@@ -52,6 +66,8 @@ Examples:
 - "Create an ALPS profile for a blog application"
 - "Validate my ALPS profile"
 - "Convert this ALPS to OpenAPI"
+- "Generate GraphQL schema from ALPS"
+- "Create database tables from ALPS"
 
 ## Skills
 
@@ -76,13 +92,47 @@ Convert ALPS profiles to OpenAPI 3.1 specifications.
 - Schema generation from semantic descriptors
 - Spectral validation of generated specs
 
-**Conversion Rules:**
+### alps-to-graphql
 
-| ALPS type | HTTP Method |
-|-----------|-------------|
-| safe | GET |
-| unsafe | POST |
-| idempotent | PUT/DELETE/PATCH |
+Convert ALPS profiles to GraphQL schema.
+
+**Features:**
+- Types from ALPS states
+- Queries from safe transitions
+- Mutations from unsafe/idempotent transitions
+- Input types from transition parameters
+
+### alps-to-jsonschema
+
+Convert ALPS profiles to JSON Schema.
+
+**Features:**
+- Response schemas from ALPS states
+- Request schemas from transition parameters
+- Type inference from schema.org definitions
+
+### alps-to-sql
+
+Convert ALPS profiles to SQL DDL.
+
+**Features:**
+- CREATE TABLE from ALPS states
+- Column types from semantic descriptors
+- Foreign keys from state relationships
+- Index suggestions
+
+**Supported Dialects:**
+- PostgreSQL (default)
+- MySQL/MariaDB
+- SQLite
+
+## Conversion Rules
+
+| ALPS type | OpenAPI | GraphQL | SQL |
+|-----------|---------|---------|-----|
+| safe | GET | Query | SELECT |
+| unsafe | POST | Mutation | INSERT |
+| idempotent | PUT/DELETE | Mutation | UPDATE/DELETE |
 
 ## References
 
