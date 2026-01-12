@@ -100,11 +100,16 @@ This skill responds to natural language requests:
 
 | Type | Prefix | Example |
 |------|--------|---------|
-| Safe transition | `go` | `goToHome`, `goProductList`, `goSearchProducts` |
+| Safe transition | `go` | `goHome`, `goProductList`, `goProductDetail` |
 | Unsafe transition | `do` | `doCreateUser`, `doAddToCart`, `doLogin` |
 | Idempotent transition | `do` | `doUpdateUser`, `doDeleteItem`, `doRemoveFromCart` |
 | State/Page | PascalCase | `HomePage`, `ProductDetail`, `ShoppingCart` |
 | Semantic field | camelCase | `userId`, `productName`, `createdAt` |
+
+**IMPORTANT: Safe transition naming rules:**
+- Safe transitions MUST include the destination state name
+- Good: `goProductList`, `goProductDetail`, `goCart`
+- Bad: `goNext`, `goBack`, `goSearch` (ambiguous, no destination state)
 
 ### Descriptor Rules
 
@@ -199,7 +204,7 @@ Generate JSON format by default. Use XML only if explicitly requested.
       ]},
 
       // Choreography: transitions
-      {"id": "goToState", "type": "safe", "rt": "#TargetState", "title": "Navigate to State"},
+      {"id": "goTargetState", "type": "safe", "rt": "#TargetState", "title": "Navigate to State"},
       {"id": "doAction", "type": "unsafe", "rt": "#ResultState", "title": "Perform Action",
         "descriptor": [{"href": "#requiredField"}]}
     ]
