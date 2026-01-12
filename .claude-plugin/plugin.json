@@ -1,0 +1,14 @@
+{
+  "name": "alps-skills",
+  "description": "ALPS profile skills for Claude Code. Generate, validate, improve ALPS profiles and convert to other formats.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Akihito Koriyama",
+    "email": "akihito.koriyama@gmail.com"
+  },
+  "homepage": "https://alps-io.github.io/",
+  "repository": "https://github.com/alps-asd/alps-skills",
+  "license": "MIT",
+  "keywords": ["alps", "api-design", "rest", "hypermedia", "openapi"],
+  "skills": "./skills/"
+}

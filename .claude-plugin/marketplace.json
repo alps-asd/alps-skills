@@ -1,0 +1,18 @@
+{
+  "name": "alps-skills",
+  "owner": {
+    "name": "Akihito Koriyama",
+    "email": "akihito.koriyama@gmail.com"
+  },
+  "metadata": {
+    "description": "ALPS profile skills for API design"
+  },
+  "plugins": [
+    {
+      "name": "alps-skills",
+      "source": "./",
+      "description": "ALPS profile skills for Claude Code. Generate, validate, improve ALPS profiles and convert to other formats.",
+      "version": "1.0.0"
+    }
+  ]
+}
