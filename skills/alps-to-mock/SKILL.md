@@ -1,6 +1,6 @@
 ---
 name: alps-to-mock
-description: Generate website mock (HTML pages + JSON API responses) from ALPS profile. Converts ALPS semantic descriptors to static HTML pages and HAL-format JSON API mock files.
+description: Generate website mock (HTML pages + JSON API responses) from ALPS profile. Converts ALPS semantic descriptors to static HTML pages and HAL-format JSON API mock files. Use when user says "ALPS to mock", "alps2mock", "generate mock", "create mock site", "generate HTML from ALPS", "ALPSからモック", "モックを生成", "HTMLモックを作成", or asks to create a website prototype from ALPS.
 ---
 
 # ALPS to Website Mock Generator

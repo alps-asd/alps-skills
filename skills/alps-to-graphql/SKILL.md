@@ -1,6 +1,6 @@
 ---
 name: alps-to-graphql
-description: Generate GraphQL schema from ALPS profile. Converts ALPS semantic descriptors to GraphQL types, queries, and mutations with automatic type inference.
+description: Generate GraphQL schema from ALPS profile. Converts ALPS semantic descriptors to GraphQL types, queries, and mutations with automatic type inference. Use when user says "ALPS to GraphQL", "alps2graphql", "convert ALPS to GraphQL", "generate GraphQL from ALPS", "ALPSからGraphQL", "GraphQLスキーマを生成", or asks to create GraphQL types from ALPS.
 ---
 
 # ALPS to GraphQL Converter

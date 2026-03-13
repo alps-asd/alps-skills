@@ -1,6 +1,6 @@
 ---
 name: alps-to-jsonschema
-description: Generate JSON Schema from ALPS profile. Converts ALPS semantic descriptors to JSON Schema for request/response validation with automatic type inference.
+description: Generate JSON Schema from ALPS profile. Converts ALPS semantic descriptors to JSON Schema for request/response validation with automatic type inference. Use when user says "ALPS to JSON Schema", "alps2jsonschema", "convert ALPS to JSON Schema", "generate JSON Schema from ALPS", "ALPSからJSONスキーマ", "JSONスキーマを生成", or asks to create validation schemas from ALPS.
 ---
 
 # ALPS to JSON Schema Converter

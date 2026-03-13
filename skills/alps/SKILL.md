@@ -1,6 +1,6 @@
 ---
 name: alps
-description: Create, validate, and improve ALPS profiles. Generate from natural language (nl2alps), validate existing profiles, and get improvement suggestions.
+description: Create, validate, and improve ALPS profiles. Generate from natural language (nl2alps), validate existing profiles, and get improvement suggestions. Use when user says "create ALPS", "generate ALPS", "validate ALPS", "improve ALPS", "nl2alps", "ALPSを作成", "ALPSプロファイルを生成", "ALPSを検証", "ALPSを改善", or asks to design an API profile.
 ---
 
 # ALPS Profile Assistant
