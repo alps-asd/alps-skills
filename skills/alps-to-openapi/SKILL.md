@@ -1,6 +1,6 @@
 ---
 name: alps-to-openapi
-description: Generate OpenAPI specification from ALPS profile. Converts ALPS semantic descriptors to RESTful API definitions with automatic validation.
+description: Generate OpenAPI specification from ALPS profile. Converts ALPS semantic descriptors to RESTful API definitions with automatic validation. Use when user says "ALPS to OpenAPI", "alps2openapi", "convert to OpenAPI", "generate API spec", "generate OpenAPI from ALPS", "ALPSからOpenAPI", "OpenAPIを生成", "APIスペックを生成", or asks to create REST API documentation from ALPS.
 ---
 
 # ALPS to OpenAPI Converter

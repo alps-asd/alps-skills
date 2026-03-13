@@ -1,6 +1,6 @@
 ---
 name: alps-to-sql
-description: Generate SQL DDL from ALPS profile. Converts ALPS semantic descriptors to database table definitions with automatic type inference and index suggestions.
+description: Generate SQL DDL from ALPS profile. Converts ALPS semantic descriptors to database table definitions with automatic type inference and index suggestions. Use when user says "ALPS to SQL", "alps2sql", "generate SQL from ALPS", "generate DDL", "create tables from ALPS", "ALPSからSQL", "SQLを生成", "テーブル定義を生成", or asks to create database schema from ALPS.
 ---
 
 # ALPS to SQL DDL Converter
